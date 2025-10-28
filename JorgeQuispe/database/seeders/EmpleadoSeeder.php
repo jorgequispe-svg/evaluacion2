@@ -17,7 +17,10 @@ class EmpleadoSeeder extends Seeder
         
         //
 
-    Empleado::factory()->count(10)->create();
+        Empleado::create(['nombre'=>'Luis','apellido'=>'Quispe','correo'=>'luisq@gmail.com','salario'=>1500.50]);
+        Empleado::create(['nombre'=>'Jorge','apellido'=>'Mollericona','correo'=>'jorgem@gmail.com','salario'=>2450.50]);
+        Empleado::create(['nombre'=>'Mateo','apellido'=>'Mamani','correo'=>'mateom@gmail.com','salario'=>5000.50]);
+
 
     }
 }

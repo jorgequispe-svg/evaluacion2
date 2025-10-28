@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('apellido');
-            $table->string('correo')->unique();
+            $table->string('correo');
             $table->decimal('salario', 10, 2);
             $table->timestamps();
         });
